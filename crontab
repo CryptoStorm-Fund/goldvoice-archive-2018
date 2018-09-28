@@ -1,0 +1,13 @@
+* * * * * /usr/bin/wget https://goldvoice.club/get_users_update/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_users_update
+
+* * * * * /usr/bin/wget https://goldvoice.club/get_reg_transfers/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_reg_transfers
+* * * * * /usr/bin/wget https://goldvoice.club/get_reg_history/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_reg_history
+
+* * * * * /usr/bin/wget https://goldvoice.club/get_posts_update/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_payout_update
+* * * * * /usr/bin/wget https://goldvoice.club/get_comments_update/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_comments_payout_update
+
+* * * * * /usr/bin/wget https://goldvoice.club/get_new_blocks_waterfall/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_new_blocks
+* * * * * /usr/bin/wget https://goldvoice.club/get_witnesses_polls_update/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_update_witnesses_polls
+*/5 * * * * /usr/bin/wget https://goldvoice.club/get_witnesses_update/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_witnesses
+*/2 * * * * /usr/bin/wget https://goldvoice.club/start_archive/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_archive
+*/10 * * * * /usr/bin/wget https://goldvoice.club/get_currencies_update/cron_parse_password/ -T 60 -q -O /tmp/cron_gold_currencies_update
